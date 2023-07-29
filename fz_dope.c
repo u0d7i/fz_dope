@@ -8,7 +8,7 @@ static void fz_dope_draw_callback(Canvas * canvas, void *ctx) {
 
     canvas_clear(canvas);
     canvas_set_font(canvas, FontSecondary);
-    canvas_draw_str(canvas, 0, 7, "fz-dope");
+    canvas_draw_str(canvas, 0, 7, "fz_dope");
     canvas_set_font(canvas, FontPrimary);
     canvas_draw_str(canvas, 13, 25, "RESET dolphin state?");
     canvas_set_font(canvas, FontSecondary);
