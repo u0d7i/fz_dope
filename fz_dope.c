@@ -1,14 +1,22 @@
 #include <furi.h>
+#include <dolphin/dolphin.h>
 #include <gui/gui.h>
 #include <power/power_service/power.h>
 #include <storage/storage.h>
 
 static void fz_dope_draw_callback(Canvas * canvas, void *ctx) {
     UNUSED(ctx);
+    char stats_str[30];
+
+    Dolphin* dolphin = furi_record_open(RECORD_DOLPHIN);
+    DolphinStats stats = dolphin_stats(dolphin);
+    furi_record_close(RECORD_DOLPHIN);
+
+    snprintf(stats_str, sizeof(stats_str),"State: L:%hu/B:%lu/C:%lu", stats.level, stats.butthurt, stats.icounter);
 
     canvas_clear(canvas);
     canvas_set_font(canvas, FontSecondary);
-    canvas_draw_str(canvas, 0, 7, "fz_dope");
+    canvas_draw_str(canvas, 0, 7, stats_str);
     canvas_set_font(canvas, FontPrimary);
     canvas_draw_str(canvas, 13, 25, "RESET dolphin state?");
     canvas_set_font(canvas, FontSecondary);
@@ -48,6 +56,7 @@ int32_t fz_dope(void *p) {
 	if (event.key == InputKeyOk) {
 	    Storage *storage = furi_record_open(RECORD_STORAGE);
 	    storage_simply_remove(storage, INT_PATH(".dolphin.state"));
+	    furi_record_close(RECORD_STORAGE);
 	    power_reboot(PowerBootModeNormal);
 	}
     }
