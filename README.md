@@ -4,7 +4,7 @@ Simple Flipper Zero app for resetting [dolphin](https://docs.flipperzero.one/bas
 
 App name is a reference to the substances, making [Jones](https://williamgibson.fandom.com/wiki/Jones) happy again.
 
-![Screenshot](img/screenshot.png)
+![Screenshot](.flipcorg/gallery/screenshot.png)
 
 Current state is displayed on a first line in a form of "State: L:level/B:butthurt/C:icounter", see [here](https://github.com/flipperdevices/flipperzero-firmware/blob/dev/applications/services/dolphin/dolphin.h).
 
