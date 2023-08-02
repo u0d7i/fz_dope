@@ -1,6 +1,6 @@
 App(
     appid="fz_dope",
-    name="fz_dope",
+    name="Dope",
     apptype=FlipperAppType.EXTERNAL,
     entry_point="fz_dope",
     requires=["gui"],
