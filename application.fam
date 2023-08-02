@@ -5,4 +5,5 @@ App(
     entry_point="fz_dope",
     requires=["gui"],
     stack_size=1 * 1024,
+    fap_icon="fz_dope_x10.png",
 )
