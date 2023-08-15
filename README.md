@@ -1,5 +1,6 @@
-## fz_dope
 [![FlipC.org](https://flipc.org/u0d7i/fz_dope/badge)](https://flipc.org/u0d7i/fz_dope)
+
+## fz_dope
 
 Simple Flipper Zero app for resetting [dolphin](https://docs.flipperzero.one/basics/dolphin) state - just removes /int/.dolphin.state file and reboots.
 
