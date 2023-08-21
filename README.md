@@ -18,4 +18,4 @@ Current state is displayed on a first line in a form of "State: L:level/B:butthu
 Some reddit user on /r/flipperzero: "I'm going to have to cancel my order, I don't think I can deal with something with eyes that sad." [here](https://www.reddit.com/r/flipperzero/comments/u9g79f/my_flipper_is_always_depressed_how_can_i_fix_this/)
 
 ### P.S.
-[Petting a dolphin](https://github.com/EugeneSmile/PetADolphin) may be a better approach.
+[Petting a dolphin](https://github.com/EugeneSmile/PetADolphin) may be a better approach (fap is available [here](https://flipc.org/EugeneSmile/PetADolphin)).
